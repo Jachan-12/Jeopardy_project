@@ -1,0 +1,170 @@
+/* TODO(faranjessani): Add styling for the modal */
+
+body {
+    background-color: navy;
+    color: white;
+}
+
+#questions {
+    background-image: none;
+    background-color: black;
+    padding: 15px;
+}
+
+#categories {
+    background-image: none;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.category {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 16.66666667%;
+    float: left;
+}
+
+.questions-column {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 16.66666667%;
+    float: left;
+}
+
+.category-cell {
+    background-image: none;
+    border: none;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-image: none;
+    background-color: navy;
+    border: none;
+    margin-bottom: 10px;
+    padding: 3px;
+    min-height: 20px;
+    box-sizing: border-box;
+}
+
+.question-cell {
+    color: goldenrod;
+    font-size: 60px;
+    font-family: Impact;
+    background-image: none;
+    background-color: navy;
+    border: none;
+    margin-bottom: 10px;
+    padding: 3px;
+    min-height: 20px;
+    height: 92px;
+}
+
+.disabled-question-cell  {
+    height: 92px;
+    color:navy;
+    cursor: not-allowed;
+    font-size: 60px;
+    font-family: Impact;
+    background-image: none;
+    background-color: navy;
+    border: none;
+    margin-bottom: 10px;
+    padding: 3px;
+    min-height: 20px;
+}
+
+#question-modal {
+    display: none;
+    width: 100vw;
+	height: 100vh;
+	padding: 0;
+}
+
+#question-modal .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#question-modal-content {
+    position: relative;
+    padding: 15px;
+    background-color: navy;
+}
+
+#question-modal-text {
+    font-size: 300%;
+    color:white;
+    text-align:center;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#question-modal-title {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.43px;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+}
+
+#question-modal-actions {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+#scoring-actions {
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align:center;
+    height: 65px;
+}
+
+#correct-button {
+    float:left;
+    text-align:left;
+}
+
+#incorrect-button {
+    float:right;
+    text-align:right;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#score {
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+}

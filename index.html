@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CN Unit2</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="modal-open">
+    <div class="panel panel-default">
+        <div class="panel-heading" id="categories"></div>
+        <div class="panel-body" id="questions"></div>
+        <div class="modal" id="question-modal" data-backdrop="static" data-keyboard="false">
+            <div id="question-modal-content">
+                <div id="question-modal-title"></div>
+                <div id="question-modal-text"></div>
+                <div id="question-modal-actions">
+                    <div class="btn btn-primary" id="question-modal-show-answer">Show Answer</div>
+                    <div class="btn btn-primary" id="question-modal-close">Close</div>
+                </div>
+                <div id="scoring-actions" style="display: none;">
+                    <div id="correct-button">
+                    <button type="button" class="btn btn-success score-button" id="correct-button">
+                        <span class="glyphicon glyphicon-ok"></span>Correct
+                      </button>
+                    </div>
+                    <div id="incorrect-button">
+                    <button type="button" class="btn btn-danger score-button" id="incorrect-button">
+                        <span class="glyphicon glyphicon-remove"></span>Wrong
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="score" style="display: none;">Current Score: <span id="current-score">0</span></div>
+</body>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/render_categories.js"></script>
+<script src="scripts/render_questions.js"></script>
+<script src="scripts/click_handlers.js"></script>
+<script src="scripts/scoring.js"></script>
+<script src="scripts/questions.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
